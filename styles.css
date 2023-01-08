@@ -1,0 +1,136 @@
+/*
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh ;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-color:  hsl(229, 96%, 91%);
+}
+
+.container{ 
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 375px;
+    background-color: white;
+    border-radius: 1rem;
+    row-gap: 1.5rem;
+    padding-bottom: 2.2rem;
+    -moz-box-shadow:0 1rem 1rem   hsl(223, 47%, 23%);
+     -webkit-box-shadow: 0 1rem 1rem   hsl(223, 47%, 23%);
+     box-shadow: 0 1rem 1rem   hsla(224, 48%, 21%, 0.208);
+}
+
+.container .banner{ 
+    max-width: 100%;
+   
+    
+}
+.container .banner img{ 
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    max-width: 100%;
+    
+}
+.container h1{ 
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 0 1rem;
+    
+}
+.container > p{ 
+    padding: 0 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    line-height: 2rem;
+}
+.container .list-field{
+    display: flex; 
+    justify-content:space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%) ;
+    margin: 0 2rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+}
+.container .list-field img{ 
+    width: 3.5rem;
+}
+.container .list-field p{ 
+    color: hsl(224, 23%, 55%);
+    line-height: 1.7rem;
+    padding-right: 2rem;
+}
+.container .list-field p span{ 
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+.container .list-field a{ 
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    font-size: 0.95rem;
+    transition: 0.33s;
+}
+.container .list-field a:hover{ 
+    color: hsl(224, 23%, 55%);
+}
+.payment-button{  
+    margin: 0 2rem;
+    padding: 1rem;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    font-family: 'Red Hat Display', sans-serif;
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: 0 1.2rem 0 0 rgba(224, 232, 255, 0.399);
+    transition: 0.33s;
+    cursor: pointer;
+}
+
+.payment-button:hover{ 
+    background-color: hsl(245, 71%, 61%);
+}
+
+.cancellation-field{ 
+    text-decoration: none;
+    padding: 0 2rem;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+    transition: 0.33s;
+}
+.cancellation-field:hover{ 
+    color: hsl(223, 47%, 23%);
+}
